@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AuthLayout } from "../../template/AuthLayout/AuthLayout";
 import { RegisterForm } from "../../organisms/RegisterForn/RegisterForm";
-import Card from "../../atoms/Card/Card";
+import { Card } from "../../atoms/Card/Card";
 import { authService } from "../../../services/auth.service";
 
 type RegisterPageProps = {

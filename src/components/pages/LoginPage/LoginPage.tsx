@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AuthLayout } from "../../template/AuthLayout/AuthLayout";
 import { LoginForm } from "../../organisms/LoginForm/LoginForm";
-import Card from "../../atoms/Card/Card";
+import { Card } from "../../atoms/Card/Card";
 import { authService } from "../../../services/auth.service";
 
 type LoginPageProps = {
@@ -13,7 +13,6 @@ export function LoginPage({ onSwitchToRegister }: LoginPageProps) {
     const [loading, setLoading] = useState(false);
 
     const handleLogin = async (email: string, password: string) => {
-        console.log('🟢 handleLogin called with:', { email, password });
         try {
             setLoading(true);
             setError("");
